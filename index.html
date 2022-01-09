@@ -2,48 +2,59 @@
 <html>
     <head>
         <title>First webpage</title>
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <div>
+    <div class="container">
+        <div class="intro">
         <img src= "https://via.placeholder.com/150"/> 
         <h1>John Gallion</h1>
         <h3>Free lance web developer</h3>
+        <p class ="quote">"Be yourself. Everyone else is already taken." - Oscar Wilde </p>
+        </div>
+        <div class="about-grid">
+            <div class="i-am">
+                <h3>I am</h3>
+                <ul class="about-list">
+                     <li>A husband</li>
+                     <li>A hard worker</li>
+                     <li>Ambitious</li>
+                </ul>
+            </div>
+            <div class="i-like">
+                <h3>My interest are</h3>
+                <ol class="about-list">
+                    <li>My kids</li>
+                    <li>Sports</li>
+                    <li>Cooking</li>
+                </ol>
+            </div>
         </div>
         <div>
-            <h3>I am</h3>
-            <ul>
-                <li>A husband</li>
-                <li>A hard worker</li>
-                <li>Ambitious</li>
-            </ul>
-            <h3>My interest are</h3>
-            <ol>
-                <li>My kids</li>
-                <li>Sports</li>
-                <li>Cooking</li>
-            </ol>
+            <h3 class="projects-heading">My Projects</h3>
+            <div class="projects-grid">
+            <img class="project-image" src="https://via.placeholder.com/300"/>
+            <img class="project-image" src="https://via.placeholder.com/300"/>
+            <img class="project-image" src="https://via.placeholder.com/300"/>
+            <img class="project-image" src="https://via.placeholder.com/300"/>
+            </div>
         </div>
-        <div>
-            <h3>My Projects</h3>
-            <img src="https://via.placeholder.com/300"/>
-            <img src="https://via.placeholder.com/300"/>
-            <img src="https://via.placeholder.com/300"/>
-            <img src="https://via.placeholder.com/300"/>
-        </div>
-        <div>
-        <div>
-            <h3>Links</h3>
-            <ul>
-                <li>
-                    <a href="https://www.linkedin.com/in/john-gallion-04aba5229/">Linkedin</a>
-                </li>
-                <li>
-                    <a href="https://github.com/JohnGallion">Github</a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/JohnGallion64">Twitter</a>
-                </li>
-            </ul>
+        <div class="links-and-contacts">
+            <div class="Links">
+                <h3>Links</h3>
+                <ul class="links-list">
+                    <li>
+                        <a href="https://www.linkedin.com/in/john-gallion-04aba5229/">Linkedin</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/JohnGallion">Github</a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/JohnGallion64">Twitter</a>
+                    </li>
+                </ul>
+            </div>
         </div>
         <div>
             <form action="#">
@@ -56,7 +67,6 @@
                 <input type="submit" valid="Send Message" />
             </form>
         </div>
-        </div>
-        
+    </div>    
     </body>
 </html>
