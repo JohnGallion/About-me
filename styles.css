@@ -104,3 +104,18 @@ body {
 h1,h2,h3,h4 {
     font-family: 'Roboto Mono', monospace;
 }
+form input, textarea {
+    padding: 5px;
+    border-radius: 5px;
+    width: 240px;
+}
+form {
+    width: 250px;
+    margin: 0 auto;
+}
+form input[type="submit"] {
+    width: 250px;
+}
+.submit-button-wrapper {
+    margin: 20px o;
+}
