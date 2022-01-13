@@ -1,13 +1,25 @@
-let submitButton = document.querySelector('#submit-button');
+
 
 function clickListener(event) {
   event.preventDefault();
   console.log('Button clicked');
 }
 
-submitButton.addEventListener('click', clickListener);
+function emailValidate(email) {
+    if(email.includes('@')) {
+        return true;
+    } else {
+        return false;
+    }
+}
 
-
+function validateNSFW(messageText){
+    if(messageText.includes('crap','fuck','shit')) {
+        return true;
+    }else {
+        return false;
+    }
+}
 
 function clickListener(event) {
     event.preventDefault();
@@ -18,5 +30,17 @@ function clickListener(event) {
     let emailText = emailInput.value;
     let messageText = messageInput.value;
 
-    console.log('email:', emailText, 'message:', messageText);
+    if(emailValidate(emailText) !== true) {
+        console.log('The email address must conatain @');
+        return false;
+    }
+    console.log('Thanks for your message!');
+    if(validateNSFW(messageText)!== true) {
+        console.log('Not Safe for work!');
+        return false
+    }
 }
+
+let submitButton = document.querySelector('#submit-button');
+
+submitButton.addEventListener('click', clickListener);
